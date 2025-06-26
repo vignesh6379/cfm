@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    
+     <link rel="stylesheet" href="style.css">
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+        </style>
+</head>
+<body>
+    
+    <div class="container">
+        <section>
+            <nav id="nav">
+                <h1 id="head">CFM Calculator</h1>
+                <i class='bx bx-menu' id="menu" onclick="menuBar()"></i>
+                
+                
+            </nav>
+            
+        </section>
+               <section>
+                <div id="nsvi">
+                   <a href="">AHU</a>
+                   <a href="">Toilet</a>
+                </div>
+               </section>
+               <h4 id="fd">Enter Floor Details</h2>
+                 <div id="output">
+                    
+                <select name="" id="campus">
+                    <option value="--Select--">--Select--</option>
+                    <option value="Campus 3A">Campus 3A</option>
+                    <option value="Campus 3B">Campus 3B</option>
+                    <option value="Campus 4A">Campus 4A</option>
+                    <option value="Campus 4B">Campus 4B</option>
+                    <option value="Campus 2">Campus 2</option>
+                </select>
+                <select name="" id="floors">
+                <option value="">--Select--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+                <select name="" id="wings">
+                    <option value="">--Select--</option>
+                    <option value="North wing">North wing</option>
+                    <option value="South wing">South wing</option>
+                    <option value="East wing">East wing</option>
+                    <option value="West wing">West wing</option>
+                </select>
+            </div>
+        <div id="fs">
+            <section id="fsi">
+                <table  cellpadding="5px">
+                    <tr><th colspan="4">Filter Size</th></tr>
+                    <tr><td>width</td><td><input type="number" name="" id="woo"></td><td><input type="number" name="" id="wooo"></td></tr>
+                    <tr><td>No.Of Filter</td><td><select name="" id="no">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></td>
+                <td><select name="" id="nt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></td></tr>
+                    <tr><td>Height</td><td > <input type="number" name="" id="ht"></td><td><input type="button" name="" id="bts" value="Get Area"  onclick="getArea()"></td></tr>
+                    <tr><td  colspan="3" align="center"><label for="" id="ot">output</label></td></tr>
+                </table>
+            </section>
+            <section>
+                <h3 id="h3">Anemometer Reading</h3>
+                <div id="tbl">
+                    <form action="">
+                         <table border="1px" rules="all" >
+                    <tr><td><input type="number" name="" id="tr"></td><td></td><td><input type="number" name="" id="tl"></td></tr>
+                    <tr><td></td><td><input type="number" name="" id="mc"></td><td></td></tr>
+                    <tr><td><input type="number" name="" id="bl"></td><td></td><td><input type="number" name="" id="br"></td></tr>
+                  </table>
+                    </form>
+                 
+                </div>
+                <div id="btn">
+                    <button id="bttn" onclick="getread()">ADD</button>
+                   <button id="btttn" onclick="goutput()" disabled>Get Outpt</button>
+                </div>
+                
+            </section>
+            <p id="sam"></p>
+
+          
+            <div id="otable">
+                <table border="1" rules="all" cellpadding="5px">
+                    <tr><th>content</th><th >data</th></tr>
+                    <tr><td align="center">Campus</td><td id="camp"></td></tr>
+                    <tr><td align="center">Floor</td><td id="floor"></td></tr>
+                    <tr><td align="center">Wings</td><td id="wing"></td></tr>
+                    <tr><td align="center">CFM</td><td id="cfmot"></td></tr>
+                    <tr><td align="center">TR</td><td id="trot"></td></tr>
+                </table>
+<H1 id="samp
+"></H1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
